@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <form id="word-input" action="javascript:startGame(this)">
+            <h1>GALLOWS</h1>
+            <input id="input" class="form-control form-control-lg" type="text" minlength="1" maxlength="20" type="text" pattern="[a-zA-Z]+" required/>
+            <button class="btn btn-light">Start game</button>
+        </form>
+        <div id="word-guessing" style="display: none;">
+            <img id="images" src="img/1.jpg"></img><br>
+            <h1 id="encrypted"></h1><br>
+            <p id="letters"></p><br>
+            <button id="restart" class="btn btn-light">Restart Game</button>
+        </div>
+    </body>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</html>
